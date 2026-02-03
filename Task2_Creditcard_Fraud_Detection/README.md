@@ -1,27 +1,38 @@
-# Task 2 - Credit Card Fraud Detection (Python / Machine Learning)
+# Task 2 - Credit Card Fraud Detection (Machine Learning)
 
 ## Description
-This project builds a Machine Learning model to detect fraudulent credit card transactions. The model is trained on transaction data and predicts whether a transaction is legitimate or fraudulent.
+This project builds a Machine Learning model to detect fraudulent credit card transactions.  
+The system analyzes transaction details such as amount, category, location, and customer information to classify transactions as   **fraudulent** or **legitimate**.
 
 ## Features
-- Data preprocessing
-- Train-test split
-- Logistic Regression model
-- Model evaluation using accuracy and classification report
-
-## Dataset
-## Dataset
-Fraud detection dataset containing fraudTrain.csv and fraudTest.csv files from Kaggle.
-
+- Loads and preprocesses credit card transaction dataset  
+- Removes unnecessary and high-cardinality columns  
+- Encodes categorical features using **Ordinal Encoding**  
+- Handles imbalanced data using class weights and proper evaluation metrics  
+- Trains multiple models including:
+  - Logistic Regression  
+  - Decision Tree  
+  - Random Forest  
+- Compares model performance and selects the best model  
+- Evaluates results using accuracy, precision, recall, F1-score, and confusion matrix  
+- Visualizes:
+  - Class distribution  
+  - Transaction amount distribution  
+  - Correlation heatmap  
+  - Confusion matrix heatmap  
+  - Feature importance  
+- Identifies most important features influencing fraud detection  
 
 ## How to Run
-1. Download the dataset (creditcard.csv) from Kaggle
-2. Place it inside this folder
-3. Open terminal
-4. Navigate to the folder:
-   cd Task2_CreditCard_Fraud_Detection
-5. Run the program:
-   python creditcard_fraud_detector.py
+1. Open terminal or VS Code  
+2. Navigate to the project folder  
+3. Open the Jupyter Notebook file:  
+   Credit_Card_Fraud_Detection.ipynb  
+4. Run all cells step by step to:  
+   - Preprocess the data  
+   - Train multiple models  
+   - Evaluate performance  
+   - View visualizations  
 
 ## Author
 Faizan  

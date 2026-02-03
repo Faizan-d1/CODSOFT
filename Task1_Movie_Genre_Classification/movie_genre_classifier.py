@@ -47,11 +47,7 @@ print()
 vectorizer = TfidfVectorizer(
     stop_words="english",
     max_features=5000
-<<<<<<< HEAD
 )  
-=======
-)
->>>>>>> 15e6944c573ed15d8fcd1243114678c777638a30
 
 X_train_tfidf = vectorizer.fit_transform(X_train)
 X_test_tfidf = vectorizer.transform(X_test)
